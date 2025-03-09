@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrimonio - 14 Settembre 2025</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Nomi degli sposi -->
+    <header>
+        <h1>Greta e Cristian</h1>
+        <h2>Siamo felici ed emozionati di condividere con Te questo giorno speciale!</h2>
+    </header>
+
+    <!-- <h4>Siamo felici ed emozionati di condividere con Te questo giorno speciale!</h4>  -->
+
+    
+    <div class="container">
+        <!-- Countdown al matrimonio -->
+        <div id="countdown-container">
+            <div id="countdown"></div>
+        </div>
+    
+        <!-- Carosello di immagini -->
+        <div class="carousel">
+            <button class="carousel-button left" onclick="moveCarousel(-1)">&#10094;</button>
+            <div class="carousel-images">
+                <img src="img/img1.jpg" alt="Foto 1">
+                <img src="img/img2.jpg" alt="Foto 2">
+                <img src="img/img3.jpg" alt="Foto 3">
+                <img src="img/img4.jpg" alt="Foto 4">
+                <img src="img/img5.jpg" alt="Foto 5">
+            </div>
+            <button class="carousel-button right" onclick="moveCarousel(1)">&#10095;</button>
+        </div>
+    </div>
+    
+
+    <!-- Ghirigori -->
+    <section id="decoration">
+        <p>
+            <img src="dec2.jpg" alt="decoration">
+        </p>
+    </section>
+    
+
+    <!-- Sezione invito -->
+    <section id="invito">
+            <h2>Domenica 14 Settembre 2025 alle ore 11:30</h2>    
+            <p>
+                Presso la 
+                <a 
+                href="https://www.google.it/maps/place/Chiesa+Madre+di+San+Pietro+in+Vincoli/@45.343652,9.7241447,560m/data=!3m1!1e3!4m6!3m5!1s0x47813cb60cb017bf:0x831cc20de2849492!8m2!3d45.3424665!4d9.7259435!16s%2Fg%2F121259_g?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" 
+                target="_blank">Chiesa di Madignano </a>
+            </p> <br>
+            <p> 
+            A seguire, andremo al 
+            <a 
+                href="https://www.google.it/maps/place/Il+Fondaco+Dei+Mercanti/@45.2942178,9.6726149,396m/data=!3m1!1e3!4m6!3m5!1s0x478124774d80b3b5:0xac964f105aa26be8!8m2!3d45.2940999!4d9.6728065!16s%2Fg%2F1tqydbqz?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" 
+                target="_blank">Fondaco dei Mercanti
+            </a>
+            a Moscazzano, per festeggiare e condividere questa bella giornata insieme <br>
+            </p>
+    </section>
+
+    <!-- Ghirigori -->
+    <section id="decoration">
+        <p>
+            <img src="dec2.jpg" alt="decoration">
+        </p>
+    </section>
+
+    <!-- Sezione per le allergie -->
+    <section id="allergie">
+        <h2>Allergie o necessità alimentari? <br> Nessun problema!</h2>
+        <p>
+            <a 
+                href="https://docs.google.com/forms/d/e/1FAIpQLScfqkX2Hd58iuFEKwbtm295tJXIEyu6PDnruOhyfejBDhFlcA/viewform?usp=sharing"
+                target="_blank">Indicale nel form
+            </a>
+        </p>
+    </section>
+
+    <!-- Sezione per la conferma -->
+     <section id="conferma">
+        <h2>Chiediamo di confermare la presenza entro il primo di Agosto </h2>
+        <p>
+            Greta 3348730981 <br>
+            Cristian 3489981321
+        </p>
+
+    </section>
+
+    <!-- Sezione per il regalo -->
+    <!-- <section id="iban">
+        <h2>Dona un regalo agli sposi</h2>
+        <p class="iban">IBAN: IT00X1234567890123456789012</p>
+    </section> -->
+
+    <!-- Collegamento a Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Ghirigori -->
+    <section id="decoration">
+        <p>
+            <img src="dec2.jpg" alt="decoration">
+        </p>
+    </section>
+
+    <!-- Sezione per il regalo -->
+    <section id="iban">
+        <h5>Sono le piccole cose a fare di un giorno qualunque un evento da ricordare. <br> I sorrisi, la condivisione, essere insieme e godersi il momento. <br> Grazie per esserci. <br> Se volete sostenerci in questo lungo cammino, potete farlo tramite:  </h5>
+        <p>
+            IBAN: <span id="iban-text">IT48L0623056840000044764731</span>
+            <i 
+                class="fas fa-copy" 
+                id="copy-iban-icon" 
+                style="cursor: pointer; margin-left: 10px; color: #2c3e50; font-size: 18px;" 
+                title="Copia IBAN">
+            </i>
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Greta & Cristian</p>
+    </footer>
+
+    <!-- Collegamento al file JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>

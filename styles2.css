@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Dancing+Script:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('sfondo.png');
+    background-size: cover;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: #2c3e50;
+}
+
+header {
+    margin: 10vh 0;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 10vw;
+    color: #434325;
+}
+h2{
+    font-family: 'Dancing Script', cursive;
+    margin: 10px 0;
+    color: #434325;
+    font-size: 5vw;
+}
+
+h4, p {
+    margin: 10px 0;
+}
+
+
+section {
+    /* background: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    padding: 2rem; */
+    margin: 5vh auto;
+    width: 90%;
+    max-width: 800px;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Countdown */
+#countdown {
+    font-size: 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    display: inline-block;
+}
+
+/* Carosello */
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 90%;
+    height: 60vh;
+    margin: 5vh auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    max-width: 500px;
+    display: none;
+}
+
+.carousel-images img.active {
+    display: block;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+
+.carousel-button.left {
+    left: 10px;
+}
+
+.carousel-button.right {
+    right: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+}

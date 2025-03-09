@@ -1,0 +1,294 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Dancing+Script:wght@700&display=swap');
+
+/* Sfondo con immagine dei fiori */
+/* Sfondo con colore e fiori */
+/* Sfondo con immagine aggiornata */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Per gestire correttamente le dimensioni e il padding */
+}
+
+/* Contenitore per gestire lo spazio tra i div */
+
+
+body {
+    /*font-family: 'Playfair Display', serif; */
+    background-image: url('sfondo.png'); /* Sostituisci con il percorso corretto */
+    background-size: cover;
+    font-family: 'Playfair Display', serif;
+    /* background-repeat: no-repeat; 
+    background-position: center; 
+    margin: 0;
+    padding: 0 0; */
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Scritta Greta & Cristian */
+@font-face {
+    font-family: 'Better Saturday';
+    src: url('fonts/BetterSaturday.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gabriola'; /* Nome che userai nel CSS */
+    src: url('fonts/gabriola.ttf') format('truetype'); /* Percorso e formato del file */
+}
+
+/* Header */
+header {
+    margin-top: 10vh; /* Sposta verso il basso */
+    text-align: center; /* Centra il contenuto */
+}
+
+h1 {
+    font-family: 'Better Saturday', cursive;
+    font-size: 5vw;
+    text-align: center;
+    color: #434325;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ombra morbida */
+    margin: 0;
+    padding: 0;
+}
+
+/* Titoli delle sezioni */
+h2 {
+    font-family: 'Better Saturday', serif;
+    font-size: 2vm;
+    margin: 10px 0;
+    font-weight: 20;
+    color: #2c3e50;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 5vw;
+    text-align: center;
+    color: #434325;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ombra morbida */
+    margin: 0;
+    padding: 0;
+}
+
+
+h4 {
+    font-family: 'Gabriola', serif;
+    font-size: 5vw;
+    text-align: center;
+    color: #434325;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ombra morbida */
+    margin: 10px 0;
+    padding: 0;
+}
+
+
+h5 {
+    font-family: 'Gabriola', serif;
+    font-size: 4vw;
+    text-align: center;
+    color: #434325;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ombra morbida */
+    margin: 0;
+    padding: 0;
+}
+
+/* Testo generico */
+p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3em;
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #2c3e50;
+}
+
+/* Rende l'immagine larga quanto il paragrafo */
+#decoration img {
+    width: 100%; /* L'immagine occupa tutta la larghezza del contenitore */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+    display: block; /* Rimuove eventuali spazi bianchi sotto l'immagine */
+    margin: 0 auto; /* Centra l'immagine, se necessario */
+}
+
+
+/* Countdown styles */
+#countdown-container {
+    margin: 0 0; /* Aumenta il margine sopra e sotto */
+    text-align: center; /* Centra il countdown nella pagina */
+}
+
+#countdown {
+    font-size: 2rem; /* Ingrandisce la dimensione del testo */
+    padding: 2rem 3rem; /* Aumenta il padding interno */
+    background-color: rgba(255, 255, 255, 0.9); /* Mantiene lo sfondo semi-trasparente */
+    border-radius: 15px; /* Arrotonda maggiormente gli angoli */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Intensifica l'ombra */
+    display: inline-block; /* Mantiene il contenitore compatto */
+    text-align: center; /* Centra il testo */
+    width: auto; /* Garantisce che il box si adatti al contenuto */
+    max-width: 90%; /* Limita la larghezza per evitare che diventi troppo grande */
+}
+
+/* Section styles */
+section {
+    /* background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    padding: 2rem; */
+    margin: 5vh auto;
+    width: 90%;
+    max-width: 800px;
+    /* box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); */
+}
+
+/* Link */
+a {
+    text-decoration: none;
+    font-size: 1em;
+    color: #3498db;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* IBAN */
+.iban {
+    font-size: 1.3em;
+    margin-top: 10px;
+    color: #2c3e50;
+}
+
+/* Footer */
+.footer {
+    background-color: rgba(255, 255, 255, 0.8); /* Sfondo bianco semitrasparente */
+    padding: 10px;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #7f8c8d;
+
+}
+
+/* Carosello */
+/* Contenitore principale del carosello */
+.carousel {
+    width: 90%; /* Larghezza del carosello relativa allo schermo */
+    height: 90vh; /* Altezza del carosello relativa all'altezza dello schermo */
+    margin-top: 0px;
+    margin: 5vh auto; /* Centra il carosello verticalmente */
+    position: relative; /* Necessario per posizionare i pulsanti */
+    overflow: hidden; /* Nasconde le immagini fuori dal contenitore */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain; /* Adatta senza tagli */
+}
+
+/* Contenitore delle immagini */
+.carousel-images {
+    display: flex; /* Dispone le immagini in riga */
+    position: relative;
+    width: 100%; /* Occupa tutta la larghezza */
+    justify-content: center; /* Centra il contenuto */
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Immagini generiche */
+.carousel-images img {
+    position: absolute; /* Posiziona ogni immagine assolutamente */
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-50%) scale(0.8); /* Scala e centra */
+    opacity: 0; /* Nascoste di default */
+    transition: all 0.5s ease-in-out;
+    width: 20vw; /* Dimensione standard relativa alla larghezza dello schermo */
+    object-fit: contain; /* Adatta senza tagli */
+    z-index: 0;
+}
+
+/* Immagine centrale */
+.carousel-images img.main {
+    opacity: 1; /* Visibile */
+    transform: translate(-50%, -50%) scale(1); /* Centra orizzontalmente e scala */
+    left: 50%; /* Allinea al centro del carosello */
+    width: 50vw; /* Dimensione maggiore relativa alla larghezza dello schermo */
+    z-index: 3; /* Sopra le altre */
+    object-fit: contain; /* Adatta senza tagli */
+}
+
+/* Immagine sinistra */
+.carousel-images img.left {
+    opacity: 0.5; /* Parzialmente visibile */
+    transform: translate(-200%, -50%) scale(0.5); /* Sposta a sinistra con offset maggiore */
+    width: 20vw; /* Dimensione ridotta */
+    z-index: 2; /* Dietro la centrale */
+    object-fit: contain; /* Adatta senza tagli */
+}
+
+/* Immagine destra */
+.carousel-images img.right {
+    opacity: 0.5; /* Parzialmente visibile */
+    transform: translate(200%, -50%) scale(0.5); /* Sposta a destra con offset maggiore */
+    width: 20vw; /* Dimensione ridotta */
+    z-index: 2; /* Dietro la centrale */
+    object-fit: contain; /* Adatta senza tagli */
+}
+
+
+/* Immagini nascoste */
+.carousel-images img.left-left,
+.carousel-images img.right-right {
+    opacity: 0; /* Completamente invisibile */
+    transform: scale(0); /* Nascondi fuori dalla vista */
+    pointer-events: none;
+}
+
+/* Bottoni */
+.carousel-button {
+    position: absolute;
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1.5vw; /* Dimensioni relative */
+    cursor: pointer;
+    font-size: 1.5vw; /* Font relativo */
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.carousel-button.left {
+    left: 2vw; /* Posizione relativa a sinistra */
+    z-index: 3;
+}
+
+.carousel-button.right {
+    right: 2vw; /* Posizione relativa a destra */
+    z-index: 3;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 7vw;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    #countdown {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    .carousel-images img {
+        max-width: 90%;
+    }
+}
